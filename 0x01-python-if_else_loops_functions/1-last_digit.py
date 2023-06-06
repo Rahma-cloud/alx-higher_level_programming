@@ -5,7 +5,7 @@ last_digit = number % 10
 print(f"Last digit of {number} is {last_digit}")
 if last_digit > 5:
     print("the string and is greater than 5")
-elif last-digit == 0:
+elif last_digit == 0:
     print("the string and is 0")
 else:
     print("and is less than 6 and not 0")
