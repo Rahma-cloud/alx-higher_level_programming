@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-return a ** b
+def pow(a, b):
+    x = a ** b
+    return (x)
