@@ -5,6 +5,5 @@ def new_in_list(my_list, idx, element):
         return dup_list
     if idx > (len(dup_list) - 1):
         return dup_list
-    if idx > 0 or idx < (len(dup_list) - 1):
-        dup_list[idx] = element
+    dup_list[idx] = element
     return dup_list
