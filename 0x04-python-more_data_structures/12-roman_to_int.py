@@ -9,9 +9,9 @@ def roman_to_int(roman_string):
     roman_int = 0
     prev_val = 0
     for char in reversed(roman_string):
-        for key, value in roman_num_spec.items():
+        for key, value in roman_num_sp.items():
             if char == key:
-                if value < prev_value:
+                if value < prev_val:
                     roman_int = roman_int - value
                 else:
                     roman_int = roman_int + value
