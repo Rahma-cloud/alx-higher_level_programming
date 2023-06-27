@@ -9,13 +9,11 @@ class Square:
         self.size = size
 
     @property
-    """a getter"""
     def size(self):
         """ to get """
         return self.__size
 
     @size.setter
-    """a setter"""
     def size(self, value):
         """This is to set the value"""
         if not isinstance(value, int):
@@ -24,7 +22,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    """an area"""
     def area(self):
         """to define the function area"""
         return self.__size ** 2
