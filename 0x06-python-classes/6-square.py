@@ -3,44 +3,46 @@
 
 
 class Square:
+    """a class square"""
     def __init__(self, size=0, position=(0, 0)):
+        """ to initialize"""
         self.size = size
         self.position = position
 
-    """ a getter"""
     @property
     def size(self):
+        """a getter"""
         return self.__size
 
-    """a setter"""
     @size.setter
     def size(self, value):
+        """a setter"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    """another getter"""
     @property
     def position(self):
+        """another getter"""
         return self.__position
 
-    """a setter"""
     @position.setter
     def position(self, value):
+        """a setter"""
         if not isinstance(value, tuple) or len(value) != 2 or \
                 not all(isinstance(coord, int) for coord in value) or \
                 any(coord < 0 for coord in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-    """a definition of are"""
     def area(self):
+        """a definition of area"""
         return self.__size ** 2
 
-    """to print self"""
     def my_print(self):
+        """to print self"""
         if self.__size == 0:
             print()
         else:
