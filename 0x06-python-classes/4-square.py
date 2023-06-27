@@ -3,17 +3,21 @@
 
 
 class Square:
+    """This is  a class"""
     def __init__(self, size=0):
+        """This is an initialization method"""
         self.size = size
 
-    """ a geeter"""
     @property
+    """a getter"""
     def size(self):
+        """ to get """
         return self.__size
 
-    """a setter"""
     @size.setter
+    """a setter"""
     def size(self, value):
+        """This is to set the value"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -22,4 +26,5 @@ class Square:
 
     """an area"""
     def area(self):
+        """to define the function area"""
         return self.__size ** 2
