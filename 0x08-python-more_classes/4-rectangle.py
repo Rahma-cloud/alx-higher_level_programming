@@ -41,12 +41,13 @@ class Rectangle:
         return 2 * (self.width + self.height)
 
     def __str__(self):
-        if self.width == 0 or self.height == 0:
-            return ""
         rectangle_str = ""
-        for _ in range(self.height):
-            rectangle_str += "#" * self.width + "\n"
-        return rectangle_strip()
-
-    def __repr__(self):
-        return f"Rectangle({self.width}, {self.height})"
+        if self.width == 0 or self.height == 0:
+            return rectangle_str
+        i = 1
+        while i <= self.height:
+            rectangle_str += "#" * self.width
+            if i + 1 <= self.height:
+                rectangle_str += "\n"
+            i += 1
+        return rectangle_str.strip()
