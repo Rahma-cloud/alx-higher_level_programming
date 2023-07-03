@@ -47,11 +47,11 @@ class Rectangle:
         rectangle_str = ""
         for _ in range(self.height):
             rectangle_str += "#" * self.width + "\n"
-        return rectangle_strip()
+        return rectangle_str.rstrip()
 
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
-        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
