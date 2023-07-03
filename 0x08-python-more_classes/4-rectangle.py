@@ -51,3 +51,6 @@ class Rectangle:
                 rectangle_str += "\n"
             i += 1
         return rectangle_str.strip()
+
+    def __repr__(self):
+        return f"Rectangle({self.width}, {self.height})"
