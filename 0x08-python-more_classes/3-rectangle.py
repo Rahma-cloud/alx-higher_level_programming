@@ -49,7 +49,7 @@ class Rectangle:
             rectangle_str += "#" * self.width
             if i + 1 <= self.height:
                 rectangle_str += "\n"
-                i += 1
+        `i += 1
         return rectangle_str
 
     def __repr__(self):
