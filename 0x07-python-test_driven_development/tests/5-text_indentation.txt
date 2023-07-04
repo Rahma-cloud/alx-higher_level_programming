@@ -1,0 +1,27 @@
+"""
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+>>> text_indentation("Folo. ALX? Stacks: C Programming, Python.")
+Folo.
+<BLANKLINE>
+ALX?
+<BLANKLINE>
+Stacks:
+<BLANKLINE>
+C Programming, Python.
+<BLANKLINE>
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+>>> text_indentation(24)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+>>> text_indentation("24.32?Folo")
+24.
+<BLANKLINE>
+32?
+<BLANKLINE>
+Folo
+>>>
+"""
