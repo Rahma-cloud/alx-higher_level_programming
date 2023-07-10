@@ -1,4 +1,3 @@
-Task 4:
 #!/usr/bin/python3
 """
 4-inherits_from Module
