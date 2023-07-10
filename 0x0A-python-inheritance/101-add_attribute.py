@@ -1,31 +1,13 @@
 #!/usr/bin/python3
 """
-100-my_int
+101-add_attribute Module
 """
 
 
-class MyInt(int):
+def add_attribute(obj, attr_name, attr_value):
     """
-    MyInt class
+    add_attribute function
     """
-    def __init__(self, value):
-        """
-        Initialization method
-        """
-        self.value = value
-
-    def __eq__(self, other):
-        """
-        equality inversion method
-        """
-        if self.value == other:
-            return False
-        return True
-
-    def __ne__(self, other):
-        """
-        not equal inversion method
-        """
-        if self.value != other:
-            return False
-        return True
+    if not hasattr(obj, '__dict__'):
+        raise TypeError("can't add new attribute")
+    obj.__setattr__(attr_name, attr_value)
