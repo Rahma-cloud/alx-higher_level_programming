@@ -8,4 +8,5 @@ import json
 
 
 def to_json_string(my_obj):
-    json.dumps(my_obj)
+    """my module"""
+    return json.dumps(my_obj)
