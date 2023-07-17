@@ -61,9 +61,14 @@ class Base:
         """
         create method
         """
-        cls.dummy = cls(5, 5)
-        cls.dummy.update(**dictionary)
-        return cls.dummy
+        if cls.__name__ == "Rectangle":
+            dummy = cls(5, 5)
+        elif cls.__name__ == "Square":
+            dummy = cls(5)
+        else:
+            dummy = cls()
+        dummy.update(**dictionary)
+        return dummy
 
     @classmethod
     def load_from_file(cls):
