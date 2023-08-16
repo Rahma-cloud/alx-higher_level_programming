@@ -1,3 +1,4 @@
---Task 0
+-- Task 0
+-- showing grants
 SHOW GRANTS FOR 'user_0d_1'@'localhost';
 SHOW GRANTS FOR 'user_0d_2'@'localhost';
