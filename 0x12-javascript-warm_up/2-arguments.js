@@ -1,4 +1,4 @@
-!/usr/bin/node
+#!/usr/bin/node
 const argv = process.argv;
 
 if (argv.length === 0) {
