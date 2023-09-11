@@ -1,4 +1,4 @@
-#!/usr/bin/node
+!/usr/bin/node
 const argv = process.argv;
 
 if (argv.length === 0) {
@@ -6,5 +6,5 @@ if (argv.length === 0) {
 } else if (argv.length === 1) {
   console.log('Argument found');
 } else {
-  console.log('Argument found');
+  console.log('Arguments found');
 }
