@@ -1,9 +1,8 @@
 #!/usr/bin/node
-module.exports = exports.esrever = function (list) {
-  const o = [];
+exports.esrever = function (list) {
   const r = [];
-  for (let i = o.length - 1; i >= 0; i--) {
-    r.push(o[i]);
+  for (let i = list.length - 1; i >= 0; i--) {
+    r.push(list[i]);
   }
-  console.log(r);
+  return r;
 };
