@@ -1,14 +1,12 @@
 #!/usr/bin/node
 module.exports = class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || h <= 0) {
-      return 'Rectangle {}';
-    } else {
+    if (w > 0 || h > 0) {
       this.width = w;
       this.height = h;
     }
     print () {
-      console.log('X');
+      return 'X';
     }
     rotate () {
       this.width = h;
