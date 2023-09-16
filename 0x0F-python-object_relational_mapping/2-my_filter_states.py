@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Task2 module
+Task2 module for mysql task
 """
 
 
