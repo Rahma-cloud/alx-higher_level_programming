@@ -4,8 +4,8 @@ Task0 module
 """
 
 
-from sys import argv
 import MySQLdb
+from sys import argv
 
 
 if __name__ == "__main__":
