@@ -22,11 +22,11 @@ if __name__ == "__main__":
           db=database,
           charset="utf8",
         )
-    cur = conn.cursor()
-    query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-    cur.execute(query, (state_name,))
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
-    cur.close()
-    conn.close()
+        cur = conn.cursor()
+        query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
+        cur.execute(query, (state_name,))
+        query_rows = cur.fetchall()
+        for row in query_rows:
+            print(row)
+        cur.close()
+        conn.close()
