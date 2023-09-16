@@ -8,9 +8,9 @@ import MySQLdb
 from sys import argv
 
 
-if len(argv) == 4:
-    if __name__ == "__main__":
-        username = agrv[1]
+if __name__ == "__main__":
+    if len(argv) == 4:
+        username = argv[1]
         password = argv[2]
         database = argv[3]
         conn = MySQLdb.connect(
