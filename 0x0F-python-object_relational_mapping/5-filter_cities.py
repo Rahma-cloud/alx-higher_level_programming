@@ -23,8 +23,8 @@ if __name__ == "__main__":
           charset="utf8",
         )
         cur = conn.cursor()
-        query = "SELECT cities.name FROM cities \
-JOIN states ON state.id = cities.states_id WHERE states.name = %s \
+        query = "SELECT cities.name FROM cities JOIN states \
+ON state.id = cities.states_id WHERE states.name = %s \
 ORDER BY cities.id ASC", (state_name,)
         cur.execute(query)
         query_rows = cur.fetchall()
