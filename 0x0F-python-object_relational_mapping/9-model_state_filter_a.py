@@ -29,7 +29,7 @@ if __name__ == "__main__":
         )
         if states_with_a:
             for state in states_with_a:
-                print("{}: {}".format(first_state.id, first_state.name))
+                print("{}: {}".format(state.id, state.name))
         else:
             print("Nothing")
         session.close()
