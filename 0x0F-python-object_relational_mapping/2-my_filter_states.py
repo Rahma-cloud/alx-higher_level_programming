@@ -9,10 +9,11 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    if len(argv) == 4:
+    if len(argv) == 5:
         username = argv[1]
         password = argv[2]
         database = argv[3]
+        state_name = argv[4]
         conn = MySQLdb.connect(
             host="localhost",
             port=3306,
