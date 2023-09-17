@@ -23,9 +23,9 @@ if __name__ == "__main__":
           charset="utf8",
         )
         cur = conn.cursor()
-        query = "SELECT cities.id, cities.name, states.name FROM cities \
-JOIN states ON cities.state_id = states.id WHERE states.name = '{}' \
-ORDER BY cities.id ASC".format(state_name)
+        query = "SELECT cities.name FROM cities \
+JOIN states ON state.id = cities.states_id WHERE states.name = %s \
+ORDER BY cities.id ASC", (state_name,)
         cur.execute(query)
         query_rows = cur.fetchall()
         for row in query_rows:
