@@ -24,9 +24,8 @@ if __name__ == "__main__":
         )
         cur = conn.cursor()
         query = "SELECT cities.name FROM cities JOIN states \
-ON state.id = cities.states_id WHERE states.name = %s \
-ORDER BY cities.id ASC", (state_name,)
-        cur.execute(query)
+ON states.id = cities.state_id WHERE states.name = %s ORDER BY cities.id ASC"
+        cur.execute(query, (state_name,))
         query_rows = cur.fetchall()
         for row in query_rows:
             print(row)
