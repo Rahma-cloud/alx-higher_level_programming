@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Task 6
 def find_peak(list_of_integers):
     # this is a function to find the peak of unsorted array
