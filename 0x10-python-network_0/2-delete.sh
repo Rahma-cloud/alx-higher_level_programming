@@ -1,3 +1,3 @@
 #!/bin/bash
 # Task 2
-curl -s -X DELETE $1
+curl -sX DELETE $1
