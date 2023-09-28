@@ -1,3 +1,3 @@
 #!/bin/bash
 #task 3
-curl -s -X OPTIONS --head $1
+curl -sl $1 | grep "Allow:" | cut -d ' ' -f 2-
