@@ -1,3 +1,3 @@
 #!/bin/bash
 #task 3
-curl -sLX OPTIONS "$1" | grep "Allow:" | cut -d' '-f2-
+curl -slX OPTIONS "$1" | grep "Allow:" | cut -d''-f 2-
