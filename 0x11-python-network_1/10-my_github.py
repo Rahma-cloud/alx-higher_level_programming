@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/ python3
 """urllib module"""
 if __name__ == "__main__":
     import requests
