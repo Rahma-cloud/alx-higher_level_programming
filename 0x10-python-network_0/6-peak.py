@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-# Task 6
+"""Task 6"""
+
+
 def find_peak(list_of_integers):
+    """to finding peak"""
     if not list_of_integers:
         return None
     low, high = 0, len(list_of_integers) - 1
