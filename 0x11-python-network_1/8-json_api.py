@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """urllib module"""
-if __name__ == "__main":
+if __name__ == "__main__":
     import requests
     import sys
     if len(sys.argv) == 2:
